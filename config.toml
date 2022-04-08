@@ -1,0 +1,49 @@
+baseURL = 'https://sparetimecoders.github.io'
+languageCode = 'en-us'
+title = 'Sparetimecoders Software Development'
+
+theme= "gruvhugo"
+
+[params.main]
+  enabled = true
+  enableKatex = true
+  metaKeywords = "fast, hugo, theme, minimal, gruvbox"
+  headerTitle = "Sparetimecoders"
+  copyright = "© 2022 Sparetimecoders"
+  name = "peter_svensson"
+  img = "https://www.gravatar.com/avatar/f2f7b571ef5c3e58f23114f6a8a2f0c1?s=200"
+  img_title = "Peter Svensson"
+  icon = "img/favicon-32x32.png"
+  quote = "Peter Svensson"
+  description= """
+    I am a highly motivated, very experienced and driven systems architect and developer with a passion
+    for technology and everything related to software development.
+    Always looking for a challenge that can improve my technical and business knowledge.
+    <br><br>
+    My experience and technical interest has lead me towards Team Lead/Architect roles.
+    I've been mentoring development teams, teaching Test Driven Development and the importance of Continuous
+    Integration and Delivery at all the business I've worked with.
+    My goal is always to develop systems better and faster, using agile methodologies to improve the teams performance
+    in order to build high quality software.
+    <br><br>
+    My tech-stack of choice  is currently Kubernetes for container orchestration, Go for backend services, RabbitMQ for
+    messaging, GraphQL for APIs and Vue or React for frontends.
+    <br> <br>
+    If you need a senior consultant in the DevOps area don't hesitate to send me a message!
+    """
+  licenseUrl = ""
+
+  # Social links
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/peter-svensson/"
+  [[params.social]]
+    name = "gitlab"
+    url = "https://gitlab.com/sparetimecoders/"
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/peter--svensson/"
+  [[params.social]]
+    name = "email"
+    url = "mailto:peter@sparetimecoders.com"
+
