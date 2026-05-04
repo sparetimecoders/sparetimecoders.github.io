@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -50,7 +50,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Software &amp; platform consultancy · Gothenburg</p>
+          <p class="eyebrow">DevOps · Cloud · Kubernetes · Architecture</p>
           <h1 class="hero-title">
             Welcome to <span class="grad">Sparetimecoders</span>.
           </h1>
@@ -61,6 +61,7 @@
             distributed systems alongside the teams who own them, and leave the place running
             better than we found it.
           </p>
+          <p class="hero-meta">Greater Gothenburg, Sweden · on-site · hybrid · remote</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="#contact">Start a conversation
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
@@ -226,9 +227,10 @@
         <h2 class="section-title">Founded and run by Peter Svensson.</h2>
         <div class="about-grid">
           <p>
-            Sparetimecoders is run by <strong>Peter Svensson</strong>, a senior software architect and engineer based in
-            Gothenburg, Sweden. Years of building, leading, and mentoring across product and platform teams — with a steady
-            focus on shipping clean, observable, well-tested systems.
+            Sparetimecoders is run by <strong>Peter Svensson</strong> <span class="pronouns">(he/him)</span>,
+            a senior software architect and engineer based in Greater Gothenburg, Sweden, and educated at
+            <strong>Chalmers University of Technology</strong>. Years of building, leading, and mentoring across
+            product and platform teams — with a steady focus on shipping clean, observable, well-tested systems.
           </p>
           <p>
             The work spans cloud-native backends, developer-experience platforms, and team-level coaching on
@@ -321,7 +323,7 @@
       <div class="foot-meta">
         <span>© <span id="year">2026</span> Sparetimecoders</span>
         <span class="dot">·</span>
-        <span>Gothenburg, Sweden</span>
+        <span>Greater Gothenburg, Sweden</span>
       </div>
     </div>
   </footer>
@@ -330,8 +332,7 @@
     (function () {
       var root = document.documentElement;
       var stored = localStorage.getItem('theme');
-      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      root.setAttribute('data-theme', stored || (prefersDark ? 'dark' : 'light'));
+      root.setAttribute('data-theme', stored || 'dark');
 
       document.getElementById('theme-toggle').addEventListener('click', function () {
         var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
